@@ -1,0 +1,40 @@
+<div *ngIf="hero != null">
+  <h2>{{hero.name}} details!</h2>
+  <div>
+    <label>id: </label>{{hero.id}}</div>
+
+  <div>
+    <label>name: </label>
+    <input [(ngModel)]="hero.name" placeholder="name" />
+  </div>
+  <div>
+    <label>level: </label>
+    <input [(ngModel)]="hero.level" placeholder="level">
+  </div>
+
+  <div>
+    <label>gainedExperience: </label>
+    <input [(ngModel)]="hero.gainedExperience" placeholder="gainedExperience">
+  </div>
+
+  <div>
+    <label>neededExperienceToLevelUp: </label>
+    <input [(ngModel)]="hero.neededExperienceToLevelUp" placeholder="neededExperienceToLevelUp">
+  </div>
+
+  <div>
+    <label>health: </label>
+    <input [(ngModel)]="hero.health" placeholder="health">
+  </div>
+
+  <div>
+    <label>mana: </label>
+    <input [(ngModel)]="hero.mana" placeholder="mana">
+  </div>
+
+  <div>
+    <label>abilities: </label>
+    <input [(ngModel)]="hero.abilities" placeholder="abilities">
+  </div>
+  <button (click)="goBack()">Back</button>
+</div>
